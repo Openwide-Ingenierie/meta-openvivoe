@@ -25,9 +25,9 @@ Patches
 =======
 
 Please submit any patches against the openvivoe layer to the
-xxxx mailing list (xxxx@zzzz.org) and cc: the maintainer:
+maintainer:
 
-Maintainer: XXX YYYYYY <xxx.yyyyyy@zzzzz.com>
+Maintainer: Hoël Vasseur <hoel.vasseur@smile.com>
 
 
 Table of Contents
@@ -62,3 +62,6 @@ II. Misc
 ========
 
 --- replace with specific information about the openvivoe layer ---
+The layer meta-openvivoe have several dependencies: glib2.0, gstreamer1.0
+net-snmp. You may need to add the meta-layer: meta-openembedded core.
+

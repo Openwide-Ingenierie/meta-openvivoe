@@ -7,13 +7,14 @@ SUMMARY = "OpenVivoe is the Open Source implementation of the VIVOE standard"
 SECTION = "base"
 LICENSE = "GPL-2.0"
 LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/GPL-2.0;md5=801f80980d171dd6425610833a22dbe6"
+HOMEPAGE = "https://openwide-ingenierie.github.io/openvivoe/"
+SECTION = "multimedia"
 
 S = "${WORKDIR}/git"
 
-SRCREV = "94df2c30dc0f2bd9deaa31b1306764a484114249"
+SRCREV = "${AUTOREV}"
 
-PR = "r6"
-PV = "git${SRCPV}"
+PV = "1.0"
 
 SRC_URI = "git://github.com/Openwide-Ingenierie/openvivoe.git"
 
