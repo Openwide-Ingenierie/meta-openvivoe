@@ -19,4 +19,11 @@ SRC_URI = "git://github.com/Openwide-Ingenierie/openvivoe.git"
 
 DEPENDS = "glib-2.0 gstreamer1.0 gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad net-snmp"
 
+RDEPENDS_${PN}+="net-snmp-server gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad"
+
 inherit cmake
+
+CONFFILES_${PN} += "${sysconfdir}/openvivoe/vivoe-mib.conf \
+                    ${sysconfdir}/openvivoe/vivoe-stream.conf \
+"
+FILES_${PN} += "${datadir}/snmp/mibs/VIVOE-MIB"
